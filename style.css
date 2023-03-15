@@ -68,6 +68,25 @@ body {
   width: 100%;
 }
 
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.task-item i {
+  background-color: #41b883;
+  color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.task-item i:hover {
+  cursor: pointer;
+}
+
 /* Utilities */
 
 .error {
@@ -76,4 +95,8 @@ body {
 
 .error::placeholder {
   color: red;
+}
+
+.completed {
+  text-decoration: line-through;
 }
